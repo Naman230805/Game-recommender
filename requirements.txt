@@ -2,4 +2,5 @@ scikit-learn==1.4.0
 streamlit
 pandas
 thefuzz[speed]
-python-Levenshtein  # Optional for faster fuzzy matching
+python-Levenshtein
+# Optional for faster fuzzy matching

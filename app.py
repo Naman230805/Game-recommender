@@ -59,7 +59,7 @@ h1 {
 """, unsafe_allow_html=True)
 
 # Load and prepare data
-df = pd.read_csv(r'C:\Projects\Game Recommender\data\steam_updated.csv')
+df = pd.read_csv('steam_updated.csv')
 df = df[['name', 'genres']].dropna().drop_duplicates(subset='name')
 df = df.reset_index(drop=True)
 df['name_lower'] = df['name'].str.lower()

@@ -1,3 +1,9 @@
+# Game Recommendation System
+# Author: Naman Bhardwaj
+# Description: ML-based recommender using content-based and collaborative filtering
+
+
+
 import pandas as pd #Basic Data frame to work with data in a table format
 from sklearn.feature_extraction.text import TfidfVectorizer # Converts Text data to numbers which can be understood by the machine
 from sklearn.metrics.pairwise import cosine_similarity  # Measures the similarity between two vectors 
@@ -53,4 +59,5 @@ if __name__ == "__main__":
             print(f"{i}. {title}")
     else:
         print(f"Could not find a close match for '{game}'. Please check the spelling.")
+
 
